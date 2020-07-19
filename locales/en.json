@@ -1,0 +1,18 @@
+{
+  "translation": {
+    "welcome": "Welcome to Swarmlab",
+    "welcome_text": "Swarmlab is a powerful collaboration tool that connects tutors and students in a unique all-in-one environment that gets work done fast and easily.",
+    "features_01_header": "Fast Deployment",
+    "features_01_text": "Tutors bootstrap their lab-rooms using our tools",
+    "features_02_header": "Collaboration ready",
+    "features_02_text": "Both teacher and students can use the latest collaboration tools",
+    "features_03_header": "Easy to Use",
+    "features_03_text": "Ready-to-Use Virtual Labs one click away",
+    "on_demand": "On demand Lab-rooms",
+    "on_demand_text": "Create and share your ideas on our lab-room platform. Join tutors labs, learn more about your interests and broaden your horizon.",
+    "git": "Git",
+    "git_text": "The wolds leading, powerful collaboration tool at your disposal on our servers. Keep in touch with your workmates and make sharing simpler then ever.",
+    "available_swarmlab": "Available Swarmlab Labrooms",
+    "bug": "Found a bug? Help us fix it!"
+  }
+}
