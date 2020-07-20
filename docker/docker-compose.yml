@@ -1,0 +1,18 @@
+version: "3.8"
+services:
+  webapp:
+    build: ../web
+    dockerfile: dockerfile
+    image: webapp:latest
+deploy:
+  mode: replicated
+  replicas: 2
+  restart_policy:
+    condition: on-failure
+    delay: 10s
+    max_attempts: 3
+    window: 120s
+  placement:
+    max_replicas_per_node: 1
+    constraints:
+      - "node.role==manager"
