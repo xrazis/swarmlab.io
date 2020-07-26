@@ -1,260 +1,191 @@
-<!DOCTYPE html>
-<html>
+<%- include("partials/header.ejs") %>
 
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-  <title>swarmlab.io</title>
-  <link rel="stylesheet" href="/stylesheets/bootstrap.min.css">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic">
-  <link rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.4.1/css/simple-line-icons.min.css">
-  <link rel="stylesheet" href="/stylesheets/Footer-Dark.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
-  <link rel="stylesheet" href="/stylesheets/Navigation-with-Button.css">
-</head>
-
-<body>
-  <nav class="navbar navbar-light navbar-expand-md navigation-clean-button">
-    <div class="container"><a class="navbar-brand text-monospace" href="index.html">swarmlab.io</a><button
-        data-toggle="collapse" class="navbar-toggler" data-target="#navcol-1"><span class="sr-only">Toggle
-          navigation</span><span class="navbar-toggler-icon"></span></button>
-      <div class="collapse navbar-collapse" id="navcol-1">
-        <ul class="nav navbar-nav mr-auto">
-          <li class="nav-item" role="presentation"><a class="nav-link" href="#features">Features</a></li>
-          <li class="nav-item" role="presentation"><a class="nav-link" href="#services">Services</a></li>
-          <li class="nav-item" role="presentation"><a class="nav-link" href="#lab-rooms">Lab-rooms</a></li>
-        </ul><span class="navbar-text actions"> <a class="login" href="#">Log In</a><a
-            class="btn btn-light action-button" role="button" href="#">Sign Up</a></span>
+<header class="masthead text-white text-center"
+  style="background: url(/images/markus-spiske-qjnAnF0jIGk-unsplash.jpg) top / cover;">
+  <div class="overlay"></div>
+  <div class="container">
+    <div class="row">
+      <div class="col-xl-9 mx-auto">
+        <h1 class="mb-5" style="height: 20px;"><%= t('welcome') %></h1>
+        <p style="font-size: 24px; color: white;"><%= t('welcome_text') %></p>
       </div>
     </div>
-  </nav>
-  <header class="masthead text-white text-center"
-    style="background: url(/images/markus-spiske-qjnAnF0jIGk-unsplash.jpg) top / cover;">
-    <div class="overlay"></div>
-    <div class="container">
-      <div class="row">
-        <div class="col-xl-9 mx-auto">
-
-          <h1 class="mb-5" style="height: 20px;"><%= t('welcome') %></h1>
-          <p style="font-size: 24px;"><%= t('welcome_text') %></p>
-        </div>
-      </div>
-    </div>
-  </header>
-  <section class="features-icons bg-light text-center" id="features">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-4">
-          <div class="mx-auto features-icons-item mb-5 mb-lg-0 mb-lg-3">
-            <div class="d-flex features-icons-icon"><i class="icon-screen-desktop m-auto text-primary"
-                data-bs-hover-animate="pulse"></i></div>
-            <h3><%= t('features_01_header') %></h3>
-            <p class="lead mb-0"><%= t('features_01_text') %></p>
-          </div>
-        </div>
-        <div class="col-lg-4">
-          <div class="mx-auto features-icons-item mb-5 mb-lg-0 mb-lg-3">
-            <div class="d-flex features-icons-icon"><i class="icon-layers m-auto text-primary"
-                data-bs-hover-animate="pulse"></i></div>
-            <h3><%= t('features_02_header') %></h3>
-            <p class="lead mb-0"><%= t('features_02_text') %></p>
-          </div>
-        </div>
-        <div class="col-lg-4">
-          <div class="mx-auto features-icons-item mb-5 mb-lg-0 mb-lg-3">
-            <div class="d-flex features-icons-icon"><i class="icon-check m-auto text-primary"
-                data-bs-hover-animate="pulse"></i></div>
-            <h3><%= t('features_03_header') %></h3>
-            <p class="lead mb-0"><%= t('features_03_text') %></p>
-          </div>
-        </div>
-        <div class="col"><a class="btn btn-primary btn-lg" role="button" data-bs-hover-animate="pulse"
-            style="color: rgb(255,255,255);margin-top: 80px;">Documentation</a></div>
-      </div>
-    </div>
-  </section>
-  <section class="showcase" id="services">
-    <div class="container-fluid p-0">
-      <div class="row no-gutters">
-        <div class="col-lg-6 order-lg-2 text-white showcase-img"
-          style="background: url(/images/thomas-jensen-ISG-rUel0Uw-unsplash.jpg) center / cover;"><span></span></div>
-        <div class="col-lg-6 my-auto order-lg-1 showcase-text">
-          <h2><strong><%= t('on_demand') %>&nbsp; </strong></h2>
-          <p class="lead mb-0"><%= t('on_demand_text') %></p><a class="btn btn-light border-dark" role="button"
-            data-bs-hover-animate="pulse" style="margin: 0;margin-top: 20px;"
-            href="https://api-client.swarmlab.io:8088">api-client.swarmlab</a>
-        </div>
-      </div>
-      <div class="row no-gutters">
-        <div class="col-lg-6 text-white showcase-img"
-          style="background: url(/images/yancy-min-842ofHC6MaI-unsplash.jpg) center / cover;"><span></span></div>
-        <div class="col-lg-6 my-auto order-lg-1 showcase-text" style="margin: 0;">
-          <h2><strong><%= t('git') %></strong></h2>
-          <p class="lead mb-0"><%= t('git_text') %></p><a class="btn btn-light border-dark" role="button"
-            data-bs-hover-animate="pulse" style="margin: 0;margin-top: 20px;"
-            href="https://git.swarmlab.io:3000">git.swarmlab</a>
-        </div>
-      </div>
-    </div>
-  </section>
-  <section class="testimonials bg-light" id="lab-rooms">
-    <div class="container">
-      <h2 class="mb-5 d-flex justify-content-center text-center"><%= t('available_swarmlab') %></h2>
-      <div class="d-flex justify-content-center">
-        <nav class="navbar navbar-light bg-light">
-          <input class="form-control mr-sm-2" type="text" placeholder="Search Lab-rooms" aria-label="Search"
-            id="search">
-        </nav>
-      </div>
-      <div class="row">
-        <div class="col">
-          <div class="card-group">
-            <div class="card" style="margin: 10px;">
-              <div class="card-body">
-                <h4 class="card-title"><%= t('python_header') %></h4>
-                <p class="card-text text-muted">
-                  <%= t('python_text') %>
-                  <ul>
-                    <li class="text-muted">NumPy</li>
-                    <li class="text-muted">SciPy library</li>
-                    <li class="text-muted">Matplotlib</li>
-                    <li class="text-muted">IPython</li>
-                    <li class="text-muted">SymPy</li>
-                    <li class="text-muted">pandas</li>
-                    <li class="text-muted">Spyder scientific environment.</li>
-                  </ul>
-                </p>
-              </div>
-              <div class="card-footer" style="background-color: white;">
-                <a class="btn btn-light btn-sm border-dark" role="button"><%= t('more_info') %></a>
-              </div>
-            </div>
-            <div class="card" style="margin: 10px;">
-              <div class="card-body">
-                <h4 class="card-title"><%= t('node_header') %></h4>
-                <p class="card-text text-muted">
-                  <%= t('node_text1') %>
-                  <ul>
-                    <li class="text-muted"><%= t('node_text2') %></li>
-                    <li class="text-muted"><%= t('node_text3') %></li>
-                    <li class="text-muted"><%= t('node_text4') %></li>
-                  </ul>
-                </p>
-              </div>
-              <div class="card-footer" style="background-color: white;">
-                <a class="btn btn-light btn-sm border-dark" role="button"><%= t('more_info') %></a>
-              </div>
-            </div>
-            <div class="card" style="margin: 10px;">
-              <div class="card-body">
-                <h4 class="card-title"><%= t('linux_header') %></h4>
-                <p class="card-text text-muted">
-                  <%= t('linux_text1') %>
-                  <ul>
-                    <li class="text-muted"><%= t('linux_text2') %></li>
-                    <li class="text-muted"><%= t('linux_text3') %></li>
-                    <li class="text-muted"><%= t('linux_text4') %></li>
-                    <li class="text-muted"><%= t('linux_text5') %></li>
-                  </ul>
-                </p>
-              </div>
-              <div class="card-footer" style="background-color: white;">
-                <a class="btn btn-light btn-sm border-dark" role="button"><%= t('more_info') %></a>
-              </div>
-            </div>
-          </div>
-          <div class="card-group">
-            <div class="card" style="margin: 10px;">
-              <div class="card-body">
-                <h4 class="card-title"><%= t('mpi_header') %></h4>
-                <p class="card-text text-muted"><%= t('mpi_text') %></p>
-              </div>
-              <div class="card-footer" style="background-color: white;">
-                <a class="btn btn-light btn-sm border-dark" role="button"><%= t('more_info') %></a>
-              </div>
-            </div>
-            <div class="card" style="margin: 10px;">
-              <div class="card-body">
-                <h4 class="card-title"><%= t('r_header') %></h4>
-                <p class="card-text text-muted"><%= t('r_text') %></p>
-              </div>
-              <div class="card-footer" style="background-color: white;">
-                <a class="btn btn-light btn-sm border-dark" role="button"><%= t('more_info') %></a>
-              </div>
-            </div>
-            <div class="card" style="margin: 10px;">
-              <div class="card-body">
-                <h4 class="card-title"><%= t('jdk_header') %></h4>
-                <p class="card-text text-muted"><%= t('jdk_text') %></p>
-              </div>
-              <div class="card-footer" style="background-color: white;">
-                <a class="btn btn-light btn-sm border-dark" role="button"><%= t('more_info') %></a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <section class="call-to-action text-white text-center"
-    style="background: url(/images/annie-spratt-QckxruozjRg-unsplash.jpg) center / cover;height: 400;" id="feedback">
-    <div class="overlay"></div>
-    <div class="container">
-      <div class="row">
-        <div class="col-xl-9 mx-auto">
-          <h2 class="mb-4"> <%= t('bug') %></h2>
-        </div>
-        <div class="col-md-10 col-lg-8 col-xl-7 mx-auto">
-          <div class="row d-flex justify-content-center justify-content-xl-center"><a
-              class="btn btn-secondary btn-lg border-secondary justify-content-center" role="button"
-              data-bs-hover-animate="pulse" style="margin: 0;margin-top: 20px;background-color: rgb(40,45,51);"
-              href=" https://git.swarmlab.io:3000/swarmlab/feedback">Feedback</a></div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <div class="footer-dark">
-    <footer>
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-6 col-md-3 item">
-            <h3>Menu</h3>
-            <ul>
-              <li><a href="#features">Features</a></li>
-              <li><a href="#">Documentation</a></li>
-              <li><a href="#services">Services</a></li>
-              <li><a href="#lab-rooms">Lab-rooms</a></li>
-              <li><a href="#feedback">Feedback</a></li>
-              <li><a href="#">FAQ</a></li>
-            </ul>
-          </div>
-          <div class="col-sm-6 col-md-3 item">
-            <h3>Translations</h3>
-            <ul>
-              <li><a href="?lng=en">English</a></li>
-              <li><a href="?lng=el">Greek</a></li>
-              <li></li>
-            </ul>
-          </div>
-          <div class=" col-md-6 item text">
-            <h3>swarmlab.io</h3>
-            <p><%= t('welcome_text') %></p>
-          </div>
-          <div class="col item social"><span class="actions"> <a class="btn btn-light btn-lg text-light action-button"
-                role="button" href="#" style="background-color: rgba(248,249,250,0);">Log In</a><a
-                class="btn btn-light btn-lg text-light action-button" role="button" href="#"
-                style="margin: 20px;background-color: rgba(248,249,250,0);color: rgb(255,255,255);">Sign Up</a></span>
-          </div>
-        </div>
-        <p class="copyright">swarmlab.io © <%= new Date().getFullYear(); %></p>
-      </div>
-    </footer>
   </div>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.bundle.min.js"></script>
-  <script src="/javascripts/bs-init.js"></script>
-  <script src="/javascripts/labSearch.js"></script>
-</body>
+</header>
+<section class="features-icons bg-light text-center" id="features">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-4">
+        <div class="mx-auto features-icons-item mb-5 mb-lg-0 mb-lg-3">
+          <div class="d-flex features-icons-icon"><i class="icon-screen-desktop m-auto text-primary"
+              data-bs-hover-animate="pulse"></i></div>
+          <h3><%= t('features_01_header') %></h3>
+          <p class="lead mb-0"><%= t('features_01_text') %></p>
+        </div>
+      </div>
+      <div class="col-lg-4">
+        <div class="mx-auto features-icons-item mb-5 mb-lg-0 mb-lg-3">
+          <div class="d-flex features-icons-icon"><i class="icon-people m-auto text-primary"
+              data-bs-hover-animate="pulse"></i></div>
+          <h3><%= t('features_02_header') %></h3>
+          <p class="lead mb-0"><%= t('features_02_text') %></p>
+        </div>
+      </div>
+      <div class="col-lg-4">
+        <div class="mx-auto features-icons-item mb-5 mb-lg-0 mb-lg-3">
+          <div class="d-flex features-icons-icon"><i class="icon-check m-auto text-primary"
+              data-bs-hover-animate="pulse"></i></div>
+          <h3><%= t('features_03_header') %></h3>
+          <p class="lead mb-0"><%= t('features_03_text') %></p>
+        </div>
+      </div>
+      <div class="col">
+        <a href="/documentation" class="btn btn-primary rounded-pill btn-lg mx-2" role="button"
+          data-bs-hover-animate="pulse" style="color: rgb(255,255,255);margin-top: 80px;">Documentation</a>
+        <a href="/faq" class="btn btn-secondary rounded-pill btn-lg mx-2" role="button" data-bs-hover-animate="pulse"
+          style="color: rgb(255,255,255);margin-top: 80px;">FAQ</a>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="showcase" id="services">
+  <div class="container-fluid p-0">
+    <div class="row no-gutters">
+      <div class="col-lg-6 order-lg-2 text-white showcase-img"
+        style="background: url(/images/thomas-jensen-ISG-rUel0Uw-unsplash.jpg) center / cover;"><span></span></div>
+      <div class="col-lg-6 my-auto order-lg-1 showcase-text">
+        <h2><strong><%= t('on_demand') %>&nbsp; </strong></h2>
+        <p class="lead mb-0"><%= t('on_demand_text') %></p><a class="btn btn-light border-dark" role="button"
+          data-bs-hover-animate="pulse" style="margin: 0;margin-top: 20px;"
+          href="https://api-client.swarmlab.io:8088">api-client.swarmlab</a>
+      </div>
+    </div>
+    <div class="row no-gutters">
+      <div class="col-lg-6 text-white showcase-img"
+        style="background: url(/images/yancy-min-842ofHC6MaI-unsplash.jpg) center / cover;"><span></span></div>
+      <div class="col-lg-6 my-auto order-lg-1 showcase-text" style="margin: 0;">
+        <h2><strong><%= t('git') %></strong></h2>
+        <p class="lead mb-0"><%= t('git_text') %></p><a class="btn btn-light border-dark" role="button"
+          data-bs-hover-animate="pulse" style="margin: 0;margin-top: 20px;"
+          href="https://git.swarmlab.io:3000">git.swarmlab</a>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="testimonials bg-light" id="lab-rooms">
+  <div class="container">
+    <h2 class="mb-5 d-flex justify-content-center text-center"><%= t('available_swarmlab') %></h2>
+    <div class="d-flex justify-content-center">
+      <nav class="navbar navbar-light" style="background-color: #f8f9fa !important; box-shadow: none;">
+        <input class="form-control mr-sm-2" type="text" placeholder="Search Lab-rooms" aria-label="Search" id="search">
+      </nav>
+    </div>
+    <div class="row">
+      <div class="col">
+        <div class="card-group">
+          <div class="card" style="margin: 10px;">
+            <div class="card-body">
+              <h4 class="card-title"><%= t('python_header') %></h4>
+              <p class="card-text text-muted">
+                <%= t('python_text') %>
+                <ul>
+                  <li class="text-muted">NumPy</li>
+                  <li class="text-muted">SciPy library</li>
+                  <li class="text-muted">Matplotlib</li>
+                  <li class="text-muted">IPython</li>
+                  <li class="text-muted">SymPy</li>
+                  <li class="text-muted">pandas</li>
+                  <li class="text-muted">Spyder scientific environment.</li>
+                </ul>
+              </p>
+            </div>
+            <div class="card-footer" style="background-color: white;">
+              <a class="btn btn-light btn-sm border-dark" role="button"><%= t('more_info') %></a>
+            </div>
+          </div>
+          <div class="card" style="margin: 10px;">
+            <div class="card-body">
+              <h4 class="card-title"><%= t('node_header') %></h4>
+              <p class="card-text text-muted">
+                <%= t('node_text1') %>
+                <ul>
+                  <li class="text-muted"><%= t('node_text2') %></li>
+                  <li class="text-muted"><%= t('node_text3') %></li>
+                  <li class="text-muted"><%= t('node_text4') %></li>
+                </ul>
+              </p>
+            </div>
+            <div class="card-footer" style="background-color: white;">
+              <a class="btn btn-light btn-sm border-dark" role="button"><%= t('more_info') %></a>
+            </div>
+          </div>
+          <div class="card" style="margin: 10px;">
+            <div class="card-body">
+              <h4 class="card-title"><%= t('linux_header') %></h4>
+              <p class="card-text text-muted">
+                <%= t('linux_text1') %>
+                <ul>
+                  <li class="text-muted"><%= t('linux_text2') %></li>
+                  <li class="text-muted"><%= t('linux_text3') %></li>
+                  <li class="text-muted"><%= t('linux_text4') %></li>
+                  <li class="text-muted"><%= t('linux_text5') %></li>
+                </ul>
+              </p>
+            </div>
+            <div class="card-footer" style="background-color: white;">
+              <a class="btn btn-light btn-sm border-dark" role="button"><%= t('more_info') %></a>
+            </div>
+          </div>
+        </div>
+        <div class="card-group">
+          <div class="card" style="margin: 10px;">
+            <div class="card-body">
+              <h4 class="card-title"><%= t('mpi_header') %></h4>
+              <p class="card-text text-muted"><%= t('mpi_text') %></p>
+            </div>
+            <div class="card-footer" style="background-color: white;">
+              <a class="btn btn-light btn-sm border-dark" role="button"><%= t('more_info') %></a>
+            </div>
+          </div>
+          <div class="card" style="margin: 10px;">
+            <div class="card-body">
+              <h4 class="card-title"><%= t('r_header') %></h4>
+              <p class="card-text text-muted"><%= t('r_text') %></p>
+            </div>
+            <div class="card-footer" style="background-color: white;">
+              <a class="btn btn-light btn-sm border-dark" role="button"><%= t('more_info') %></a>
+            </div>
+          </div>
+          <div class="card" style="margin: 10px;">
+            <div class="card-body">
+              <h4 class="card-title"><%= t('jdk_header') %></h4>
+              <p class="card-text text-muted"><%= t('jdk_text') %></p>
+            </div>
+            <div class="card-footer" style="background-color: white;">
+              <a class="btn btn-light btn-sm border-dark" role="button"><%= t('more_info') %></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="call-to-action text-white text-center"
+  style="background: url(/images/annie-spratt-QckxruozjRg-unsplash.jpg) center / cover;height: 400;" id="feedback">
+  <div class="overlay"></div>
+  <div class="container">
+    <div class="row">
+      <div class="col-xl-9 mx-auto">
+        <h2 class="mb-4"> <%= t('bug') %></h2>
+      </div>
+      <div class="col-md-10 col-lg-8 col-xl-7 mx-auto">
+        <div class="row d-flex justify-content-center justify-content-xl-center"><a
+            class="btn btn-secondary btn-lg border-secondary justify-content-center rounded-pill" role="button"
+            data-bs-hover-animate="pulse" style="margin: 0;margin-top: 20px;background-color: rgb(40,45,51);"
+            href="https://git.swarmlab.io:3000/swarmlab/feedback">Feedback</a></div>
+      </div>
+    </div>
+  </div>
+</section>
 
-</html>
+<%- include("partials/footer.ejs") %>

@@ -28,7 +28,7 @@
     "r_header": "R Project for Statistical Computing",
     "r_text": "One of the powerful choices for statistical analysis. R helps you to get big picture of your data by calculating statistical parameters like mean, standard deviation, correlation etc ",
     "node_header": "Node.js",
-    "node_text1 ": "Node.js® is a JavaScript runtime built on Chrome's V8 JavaScript engine. This Labroom is designed to help you devel:",
+    "node_text1": "Node.js® is a JavaScript runtime built on Chrome's V8 JavaScript engine. This Labroom is designed to help you devel:",
     "node_text2": "Web Applications and APIs with express",
     "node_text3": "WebSocket Client & Server Implementation for Node",
     "node_text4": "Learn How to providing a bi-directional communication channel between a client and a server.",
