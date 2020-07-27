@@ -9,3 +9,15 @@ $("#search").on("keyup", () => {
         }
     });
 });
+
+$("#search-docs").on("keyup", () => {
+    var searchValue = $("#search-docs").val().toLowerCase();
+    $(".search-docs").each(function () {
+        var title = $(this).children();
+        if (title.text().toLowerCase().includes(searchValue)) {
+            $(this).show();
+        } else {
+            $(this).hide();
+        }
+    });
+});

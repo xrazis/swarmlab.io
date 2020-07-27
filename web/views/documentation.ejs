@@ -1,1 +1,195 @@
 <%- include("partials/header.ejs") %>
+
+<div class="container-fluid">
+    <div class="row py-3">
+        <div class="col-md-2 text-left mb-4 border-right" id="sticky-sidebar">
+            <div class="d-flex justify-content-center  border-bottom">
+                <nav class="navbar navbar-light mb-0" style="background-color: #f8f9fa !important; box-shadow: none;">
+                    <input class="form-control" type="text" placeholder="Search..." aria-label="Search"
+                        id="search-docs">
+                </nav>
+                <button class="btn d-lg-none d-xl-none" data-toggle="collapse" href="#collapseSidebar" role="button"
+                    aria-expanded="false" aria-controls="collapseSidebar" style="box-shadow: none;">
+                    <svg width="32" height="32" viewBox="0 0 16 16" class="bi bi-menu-down" fill="currentColor"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd"
+                            d="M15 13V4a1 1 0 0 0-1-1h-3.586A2 2 0 0 1 9 2.414l-1-1-1 1A2 2 0 0 1 5.586 3H2a1 1 0 0 0-1 1v9a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1zM2 2a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2h-3.586a1 1 0 0 1-.707-.293L8.354.354a.5.5 0 0 0-.708 0L6.293 1.707A1 1 0 0 1 5.586 2H2z" />
+                        <path fill-rule="evenodd"
+                            d="M15 11H1v-1h14v1zm0-4H1V6h14v1zM2 12.5a.5.5 0 0 1 .5-.5h6a.5.5 0 0 1 0 1h-6a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h8a.5.5 0 0 1 0 1h-8a.5.5 0 0 1-.5-.5z" />
+                    </svg> </button>
+            </div>
+            <div class="sticky-top collapse show border-bottom" id="collapseSidebar">
+                <ul class="list-unstyled mx-2 text-black-50" style="overflow-y: scroll; max-height: 78vh;">
+                    <li class="search-docs"><a href="">The first steps</a></li>
+                    <li class="search-docs"><a href="">The Swarmlabs platform</a></li>
+                    <li class="search-docs"><a href="">The Main page</a></li>
+                    <li class="search-docs"><a href="">My lab</a>
+                        <ol>
+                            <li class="search-docs"><a href="">The run menu</a></li>
+                            <li class="search-docs"><a href="">Run lab instance area</a>
+                                <ol>
+                                    <li class="search-docs"><a href="">Creating a lab</a></li>
+                                    <li class="search-docs"><a href="">Running a lab instance</a></li>
+                                </ol>
+                            </li>
+                            <li class="search-docs"><a href="">Enter a lab-room area</a>
+                                <ol>
+                                    <li class="search-docs"><a href="">Browsing lab-rooms</a></li>
+                                    <li class="search-docs"><a href="">Entering a lab-room</a></li>
+                                </ol>
+                            </li>
+                        </ol>
+                    </li>
+                    <li class="search-docs"><a href="">Bootstrap</a></li>
+                    <li class="search-docs"><a href="">For tutors</a>
+                        <ol>
+                            <li class="search-docs"><a href="">My labrooms</a></li>
+                            <li class="search-docs"><a href="">Bootstrap labrooms</a></li>
+                        </ol>
+                    </li>
+                    <li class="search-docs"><a href="">Platform architecture</a></li>
+                    <li class="search-docs"><a href="">Storage</a>
+                        <ol>
+                            <li class="search-docs"><a href="">IPFS cluster</a></li>
+                            <li class="search-docs"><a href="">minio cluster</a></li>
+                            <li class="search-docs"><a href="">MariaDB Galera cluster</a></li>
+                            <li class="search-docs"><a href="">A replica set in MongoDB</a></li>
+                            <li class="search-docs"><a href="">ShareDB</a></li>
+                        </ol>
+                    </li>
+                    <li class="search-docs"><a href="">Devel</a>
+                        <ol>
+                            <li class="search-docs"><a href="">slim</a></li>
+                            <li class="search-docs"><a href="">node-js</a></li>
+                            <li class="search-docs"><a href="">vue.js</a></li>
+                            <li class="search-docs"><a href="">python</a></li>
+                            <li class="search-docs"><a href="">php</a></li>
+                            <li class="search-docs"><a href="">codemirror</a></li>
+                            <li class="search-docs"><a href="">oauth2</a></li>
+                        </ol>
+                    </li>
+                    <li class="search-docs"><a href="">System admin and devel</a>
+                        <ol>
+                            <li class="search-docs"><a href="">docker</a></li>
+                            <li class="search-docs"><a href="">docker-compose</a></li>
+                            <li class="search-docs"><a href="">Bash</a></li>
+                            <li class="search-docs"><a href="">ansible</a></li>
+                            <li class="search-docs"><a href="">keycloak</a></li>
+                        </ol>
+                    </li>
+                    <li class="search-docs"><a href="">Deploy</a>
+                        <ol>
+                            <li class="search-docs"><a href="">Docker swarm</a></li>
+                        </ol>
+                    </li>
+                    <li class="search-docs"><a href="">Colaboration</a>
+                        <ol>
+                            <li class="search-docs"><a href="">gitea</a></li>
+                            <li class="search-docs"><a href="">jitsi</a></li>
+                        </ol>
+                    </li>
+                    <li class="search-docs"><a href="">Service access</a>
+                        <ol>
+                            <li class="search-docs"><a href="">Docker swarm</a></li>
+                            <li class="search-docs"><a href="">ttyd</a></li>
+                        </ol>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="col-md-10" id="main">
+            <div class="container-fluid mx-2">
+                <h1>Main Area</h1>
+                <p>Chambray sustainable roof party. Shoreditch vegan artisan Helvetica. Tattooed Codeply <br /> Echo
+                    Park
+                    Godard kogi, next level irony ennui twee squid fap selvage. Meggings flannel Brooklyn literally
+                    small
+                    batch, mumblecore PBR try-hard kale chips. Brooklyn vinyl lumbersexual bicycle rights, viral fap
+                    cronut
+                    leggings squid chillwave pickled gentrify mustache. 3 wolf moon hashtag church-key Odd Future.
+                    Austin
+                    messenger bag normcore, Helvetica Williamsburg sartorial tote bag distillery Portland before they
+                    sold
+                    out gastropub taxidermy Vice.</p>
+                <p>3 wolf moon retro jean shorts chambray sustainable roof party. Shoreditch <br />vegan artisan
+                    Helvetica.
+                    Tattooed Codeply Echo Park Godard kogi, next level irony ennui twee squid fap selvage. Meggings
+                    flannel<br /> Brooklyn literally small batch, mumblecore PBR try-hard kale chips. Brooklyn vinyl
+                    lumbersexual bicycle rights, viral fap cronut leggings squid chillwave pickled gentrify mustache. 3
+                    wolf
+                    moon hashtag church-key Odd Future. Austin messenger bag normcore, Helvetica Williamsburg sartorial
+                    tote
+                    bag distillery Portland before they sold out gastropub taxidermy Vice.</p>
+                <p>3 wolf moon retro jean shorts chambray sustainable roof party. Shoreditch <br />vegan artisan
+                    Helvetica.
+                    Tattooed Codeply Echo Park Godard kogi, next level irony ennui twee squid fap selvage. Meggings
+                    flannel<br /> Brooklyn literally small batch, mumblecore PBR try-hard kale chips. Brooklyn vinyl
+                    lumbersexual bicycle rights, viral fap cronut leggings squid chillwave pickled gentrify mustache.
+                    3 wolf
+                    moon hashtag church-key Odd Future. Austin messenger bag normcore, Helvetica Williamsburg
+                    sartorial tote
+                    bag distillery Portland before they sold out gastropub taxidermy Vice.</p>
+                <p>3 wolf moon retro jean shorts chambray sustainable roof party. Shoreditch <br />vegan
+                    artisan Helvetica.
+                    Tattooed Codeply Echo Park Godard kogi, next level irony ennui twee squid fap selvage.
+                    Meggings
+                    flannel<br /> Brooklyn literally small batch, mumblecore PBR try-hard kale chips. Brooklyn
+                    vinyl
+                    lumbersexual bicycle rights, viral fap cronut leggings squid chillwave pickled gentrify
+                    mustache. 3 wolf
+                    moon hashtag church-key Odd Future. Austin messenger bag normcore, Helvetica Williamsburg
+                    sartorial tote
+                    bag distillery Portland before they sold out gastropub taxidermy Vice.</p>
+                <p>3 wolf moon retro jean shorts chambray sustainable roof party. Shoreditch <br />vegan
+                    artisan Helvetica.
+                    Tattooed Codeply Echo Park Godard kogi, next level irony ennui twee squid fap selvage.
+                    Meggings
+                    flannel<br /> Brooklyn literally small batch, mumblecore PBR try-hard kale chips.
+                    Brooklyn
+                    vinyl
+                    lumbersexual bicycle rights, viral fap cronut leggings squid chillwave pickled gentrify
+                    mustache. 3 wolf
+                    moon hashtag church-key Odd Future. Austin messenger bag normcore, Helvetica
+                    Williamsburg
+                    sartorial tote
+                    bag distillery Portland before they sold out gastropub taxidermy Vice.</p>
+                <p>3 wolf moon retro jean shorts chambray sustainable roof party. Shoreditch
+                    <br />vegan
+                    artisan Helvetica.
+                    Tattooed Codeply Echo Park Godard kogi, next level irony ennui twee
+                    squid fap selvage.
+                    Meggings
+                    flannel<br /> Brooklyn literally small batch, mumblecore PBR try-hard
+                    kale chips. Brooklyn
+                    vinyl
+                    lumbersexual bicycle rights, viral fap cronut leggings squid chillwave
+                    pickled gentrify
+                    mustache. 3 wolf
+                    moon hashtag church-key Odd Future. Austin messenger bag normcore,
+                    Helvetica Williamsburg
+                    sartorial tote
+                    bag distillery Portland before they sold out gastropub taxidermy Vice.
+                </p>
+                <p>3 wolf moon retro jean shorts chambray sustainable roof
+                    party. Shoreditch <br />vegan
+                    artisan Helvetica.
+                    Tattooed Codeply Echo Park Godard kogi, next level irony
+                    ennui twee squid fap selvage.
+                    Meggings
+                    flannel<br /> Brooklyn literally small batch, mumblecore PBR
+                    try-hard kale chips. Brooklyn
+                    vinyl
+                    lumbersexual bicycle rights, viral fap cronut leggings squid
+                    chillwave pickled gentrify
+                    mustache. 3 wolf
+                    moon hashtag church-key Odd Future. Austin messenger bag
+                    normcore, Helvetica Williamsburg
+                    sartorial tote
+                    bag distillery Portland before they sold out gastropub
+                    taxidermy Vice.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<%- include("partials/footer.ejs") %>
