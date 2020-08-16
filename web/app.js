@@ -11,6 +11,7 @@ var createError = require('http-errors'),
 var indexRouter = require('./routes/index');
 var enTranslations = require("./locales/en.json");
 var elTranslations = require("./locales/el.json");
+var config = require("./config/creds.js");
 
 var app = express();
 
@@ -49,7 +50,7 @@ app.use(
     cookie: {
       maxAge: 60000
     },
-    secret: "secret",
+    secret: config.sessionSecret,
     resave: false,
     saveUninitialized: false
   })
