@@ -12,7 +12,7 @@ var http = require('http');
  * Get port from environment and store in Express.
  */
 
-var port = normalizePort('3000'); //Fixed port for docker 
+var port = normalizePort('8080'); //Fixed port for docker 
 app.set('port', port);
 
 /**

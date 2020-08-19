@@ -1,6 +1,6 @@
 $("#search").on("keyup", () => {
     var searchValue = $("#search").val().toLowerCase();
-    $(".card .card-body .card-title").each(function () { // es6 arrow function wont work with 'this'
+    $(".card .card-body .card-title").each(function () {
         var title = $(this);
         if (title.text().toLowerCase().includes(searchValue)) {
             $(this).parent().parent().show();
@@ -21,3 +21,5 @@ $("#search-docs").on("keyup", () => {
         }
     });
 });
+
+//refractor both searches

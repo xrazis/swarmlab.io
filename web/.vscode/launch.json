@@ -1,0 +1,28 @@
+// flatpak run org.mozilla.firefox --start-debugger-server
+
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "firefox",
+            "request": "attach",
+            "name": "Attach Firefox",
+            "url": "http://127.0.0.1:3000/",
+            "webRoot": "${workspaceFolder}",
+            "pathMappings": [
+                {
+                    "url": "http://127.0.0.1:3000",
+                    "path": "${workspaceFolder}/public"
+                }
+            ]
+        },
+        {
+            "type": "node",
+            "request": "attach",
+            "name": "Node: Nodemon",
+            "processId": "${command:PickProcess}",
+            "restart": true,
+            "protocol": "inspector"
+        }
+    ]
+}
