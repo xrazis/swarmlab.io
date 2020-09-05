@@ -2,19 +2,16 @@
 
 {
     "version": "0.2.0",
-    "configurations": [
-        {
+    "configurations": [{
             "type": "firefox",
             "request": "attach",
             "name": "Attach Firefox",
-            "url": "http://127.0.0.1:3000/",
+            "url": "http://127.0.0.1:8080/",
             "webRoot": "${workspaceFolder}",
-            "pathMappings": [
-                {
-                    "url": "http://127.0.0.1:3000",
-                    "path": "${workspaceFolder}/public"
-                }
-            ]
+            "pathMappings": [{
+                "url": "http://127.0.0.1:8080",
+                "path": "${workspaceFolder}/public"
+            }]
         },
         {
             "type": "node",

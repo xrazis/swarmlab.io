@@ -21,5 +21,3 @@ $("#search-docs").on("keyup", () => {
         }
     });
 });
-
-//refractor both searches
