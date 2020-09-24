@@ -12,6 +12,8 @@
     "on_demand_text": "Create and share your ideas on our lab-room platform. Join tutors labs, learn more about your interests and broaden your horizon.",
     "git": "Git",
     "git_text": "The wolds leading, powerful collaboration tool at your disposal on our servers. Keep in touch with your workmates and make sharing simpler then ever.",
+    "learning_objects": "Learning Objects Notebooks",
+    "learning_objects_text": "Create a Web-based interactive chunks of e-learning to explain a learning objective, which can be used, reused or referenced during technology supported learning.",
     "available_swarmlab": "Available Swarmlab Lab-rooms",
     "bug": "Found a bug? Help us fix it!",
     "more_info": "More Info",
@@ -34,7 +36,6 @@
     "node_text4": "Learn How to providing a bi-directional communication channel between a client and a server.",
     "python_header": "Python, scipy",
     "python_text": "This Labroom provides a Python-based ecosystem of open-source software for mathematics, science, engineering and Web development",
-
     "doc-text-02": "The Swarmlabs platform",
     "doc-text-03": "The Main page",
     "doc-text-04": "My lab",

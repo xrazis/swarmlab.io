@@ -1,5 +1,15 @@
-$(document).ready(function(){
+$(document).ready(function () {
 	$('[data-bs-hover-animate]')
-		.mouseenter( function(){ var elem = $(this); elem.addClass('animated ' + elem.attr('data-bs-hover-animate')) })
-		.mouseleave( function(){ var elem = $(this); elem.removeClass('animated ' + elem.attr('data-bs-hover-animate')) });
+		.mouseenter(function () {
+			var elem = $(this);
+			elem.addClass('animated ' + elem.attr('data-bs-hover-animate'))
+		})
+		.mouseleave(function () {
+			var elem = $(this);
+			elem.removeClass('animated ' + elem.attr('data-bs-hover-animate'))
+		});
 });
+
+window.onload = function () {
+	particlesJS.load('particles-js', '../assets/particlesjs-config.json');
+}
