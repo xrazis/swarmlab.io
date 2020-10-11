@@ -1,18 +1,25 @@
 <%- include("partials/header.ejs") %>
 
-<header style="height: 90vh; background-color: #f8f9fa;">
+<header class="container-fluid mt-5 p-5">
   <div id="particles-js"></div>
-  <div class="container mb-5 mt-4">
-    <div class="col-sm-12 mt-5">
+  <div class="row no-gutters mb-5">
+      <div class="col-lg-12 my-auto order-lg-1 showcase-text text-center" style="margin-bottom: 5rem !important;">
       <h1><%= t('welcome') %></h1>
       <p style="font-size: 20px;"><%= t('welcome_text') %></p>
       <a href="/documentation#getStarted" class="btn btn-primary rounded-pill btn-md mt-1" role="button"
         data-bs-hover-animate="pulse" style="color: rgb(255,255,255);">Get Started!</a>
+      </div>
+      <div class="col-lg-12 order-lg-2 text-white" style="background: url(/images/undraw_content_team_3epn.svg) center / contain; height: 35vh; background-repeat:
+        no-repeat;"><span></span></div>
+    </div>
+  <!-- <div class="container mb-5 mt-4">
+    <div class="col-sm-12 mt-5">
+      
     </div>
     <div class="container col-sm-12 col-lg-6 mt-5">
       <img class="img-fluid float-right" src="/images/undraw_content_team_3epn.svg" alt="">
     </div>
-  </div>
+  </div> -->
 </header>
 
 <section class="features-icons bg-light text-center" id="features">
